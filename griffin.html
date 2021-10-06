@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+
+        <title>THE GRIFFIN</title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let hint_button = document.querySelector("#more_hint");
+                hint_button.addEventListener('click', function() {
+                    document.querySelector('#feedback').innerHTML = 'The height is key (^_^)';
+                });
+            });
+        </script>
+
+    </head>
+
+    <body>
+
+        <nav id="navbar">
+            <div class="container">
+                <div class="avatar">
+                    <span>HANZOVAN</span>
+                    <img src="my_avatar.jpg" alt="avatar picture">
+                </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="toad_princess.html">Scratch Animated Story</a></li>
+                    <li><a href="Rooster_eggs.html">Scratch Game 1</a></li>
+                    <li><a href="griffin.html">Scratch Game 2</a></li>
+                    <li><a href="about.html">About me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>THE GRIFFIN</h1>
+
+        <div class="game">
+            <iframe src="https://scratch.mit.edu/projects/542356219/embed" width="728" height="603" allowfullscreen></iframe>
+        </div>
+
+        <section>
+            <h4>Hints:</h4>
+
+                <ul>
+                    <li>
+                        <div class="hint">
+                            <span>Click</span>
+                            <img src="green_flag.JPG" alt="flag sign">
+                            <span>to begin</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hint">
+                            <span>Click</span>
+                            <img src="stop_sign.JPG" alt="stop sign">
+                            <span>to stop</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hint">
+                            <span>Click</span>
+                            <img src="stop_sign.JPG" alt="stop sign">
+                            <span> then click</span>
+                            <img src="green_flag.JPG" alt="flag sign">
+                            <span> to restart</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>The griffin want to get out of the city, please help him</span>
+                    </li>
+
+                    <li>
+                        <span>Avoid flying objects, clouds are safe though</span>
+                    </li>
+
+                    <li>
+                        <span>To fly higher, use DOWN ARROW instead of UP</span>
+                    </li>
+                    <li>
+                        <div class="hint">
+                            <button id="more_hint" class="btn btn-success">How to fly longer?</button>
+                            <p id="feedback"></p>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+        </section>
+
+        <footer>
+            <div class="container">
+                &#169; Nguyen Dinh Thi Van
+            </div>
+        </footer>
+
+    </body>
+</html>
